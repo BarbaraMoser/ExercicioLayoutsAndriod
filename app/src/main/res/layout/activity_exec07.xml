@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F51B5"
+    tools:context=".Exec07">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:backgroundTint="#676464"
+                app:title="BOA VIAGEM"
+                app:titleTextColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/gastos"
+            android:layout_width="145dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:text="Novo gasto"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mensagens"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageGasto"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageGasto"
+            android:layout_width="148dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageMessage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageMessage"
+            android:layout_width="148dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="395dp"
+            android:background="@drawable/message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageGasto"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/mensagens"
+            android:layout_width="145dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:text="Nova viagem"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gastos"
+            app:layout_constraintTop_toBottomOf="@+id/imageMessage"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageTrips"
+            android:layout_width="148dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/placa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageEngine"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gastos" />
+
+        <TextView
+            android:id="@+id/viagens"
+            android:layout_width="145dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:text="Minhas viagens"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/config"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTrips"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageEngine"
+            android:layout_width="148dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/engrenagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageTrips"
+            app:layout_constraintTop_toBottomOf="@+id/mensagens" />
+
+        <TextView
+            android:id="@+id/config"
+            android:layout_width="139dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Configurações"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viagens"
+            app:layout_constraintTop_toBottomOf="@+id/imageEngine"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="711dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

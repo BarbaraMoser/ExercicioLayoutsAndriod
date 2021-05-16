@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:actionBarNavMode="standard"
+    android:orientation="vertical"
+    tools:context=".Exec02">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Modern Art UI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#8F9552"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#E78AF8"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#910736"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#EDE18F"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1043DD"
+                android:padding="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
